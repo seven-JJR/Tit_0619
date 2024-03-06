@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>517</width>
+    <height>439</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>517</width>
+    <height>439</height>
+   </size>
+  </property>
+  <property name="cursor">
+   <cursorShape>PointingHandCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Lily TNB Auto Tool</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="tubiao.qrc">
+    <normaloff>:/tubiao/Public.ico</normaloff>:/tubiao/Public.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+
+background-color:#ffffff;
+
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_12">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>50</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/greenbutton/greenbutton.png);
+color:#ffffff;
+font：15px;
+}
+QPushButton:hover{
+color:#070707;
+}</string>
+    </property>
+    <property name="text">
+     <string> AC S4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_13">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>50</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/greenbutton/greenbutton.png);
+color:#ffffff;
+font：15px;
+}
+QPushButton:hover{
+color:#070707;
+}</string>
+    </property>
+    <property name="text">
+     <string> FSU</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_15">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/greenbutton/greenbutton.png);
+color:#ffffff;
+font：15px;
+}
+QPushButton:hover{
+color:#070707;
+}</string>
+    </property>
+    <property name="text">
+     <string> S5</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_17">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>50</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/greenbutton/greenbutton.png);
+color:#ffffff;
+font：15px;
+}
+QPushButton:hover{
+color:#070707;
+}</string>
+    </property>
+    <property name="text">
+     <string>AC MS</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_18">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>50</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/greenbutton/greenbutton.png);
+color:#ffffff;
+font：15px;
+}
+QPushButton:hover{
+color:#070707;
+}</string>
+    </property>
+    <property name="text">
+     <string> AC WB</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>270</y>
+      <width>511</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_20">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/greenbutton/greenbutton.png);
+color:#ffffff;
+font：15px;
+}
+QPushButton:hover{
+color:#070707;
+}</string>
+    </property>
+    <property name="text">
+     <string>环境设置</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>59</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>输入圈数：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>20</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_28">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>80</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/greenbutton/greenbutton.png);
+color:#ffffff;
+font：15px;
+}
+QPushButton:hover{
+color:#070707;
+}</string>
+    </property>
+    <property name="text">
+     <string>DC WB</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>20</y>
+      <width>47</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+
+color:#ffffff;
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_29">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>80</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/greenbutton/greenbutton.png);
+color:#ffffff;
+font：15px;
+}
+QPushButton:hover{
+color:#070707;
+}</string>
+    </property>
+    <property name="text">
+     <string>  DC MS</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_31">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>80</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/greenbutton/greenbutton.png);
+color:#ffffff;
+font：15px;
+}
+QPushButton:hover{
+color:#070707;
+}</string>
+    </property>
+    <property name="text">
+     <string>WinLR FSU</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_32">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>110</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/greenbutton/greenbutton.png);
+color:#ffffff;
+font：15px;
+}
+QPushButton:hover{
+color:#070707;
+}</string>
+    </property>
+    <property name="text">
+     <string>WinLR S5</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_33">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>110</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/greenbutton/greenbutton.png);
+color:#ffffff;
+font：15px;
+}
+QPushButton:hover{
+color:#070707;
+}</string>
+    </property>
+    <property name="text">
+     <string>Tool copy</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_30">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>80</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/greenbutton/greenbutton.png);
+color:#ffffff;
+font：15px;
+}
+QPushButton:hover{
+color:#070707;
+}</string>
+    </property>
+    <property name="text">
+     <string>DC S4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_34">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>110</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/greenbutton/greenbutton.png);
+color:#ffffff;
+font：15px;
+}
+QPushButton:hover{
+color:#070707;
+}</string>
+    </property>
+    <property name="text">
+     <string>LOG收集</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_35">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>110</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/greenbutton/greenbutton.png);
+color:#ffffff;
+font：15px;
+}
+QPushButton:hover{
+color:#070707;
+}</string>
+    </property>
+    <property name="text">
+     <string>LOG查看</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_36">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>140</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/greenbutton/greenbutton.png);
+color:#ffffff;
+font：15px;
+}
+QPushButton:hover{
+color:#070707;
+}</string>
+    </property>
+    <property name="text">
+     <string>机器注册</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_37">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>110</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/greenbutton/greenbutton.png);
+color:#ffffff;
+font：15px;
+}
+QPushButton:hover{
+color:#070707;
+}</string>
+    </property>
+    <property name="text">
+     <string> WiLRCombine</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>150</y>
+      <width>201</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QProgressBar{
+background-color:rgb(253, 253, 253)
+}
+</string>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>10</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+
+color:#ff0000;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>ATS区域</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>290</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+
+color:#ff0000;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>AZ区域</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_21">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>320</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/greenbutton/greenbutton.png);
+color:#ffffff;
+font：15px;
+}
+QPushButton:hover{
+color:#070707;
+}</string>
+    </property>
+    <property name="text">
+     <string>账户切换</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>150</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>150</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>选择专案名称:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="greenbutton.qrc"/>
+  <include location="tubiao.qrc"/>
+  <include location="bottombackgound.qrc"/>
+  <include location="yellowbutton.qrc"/>
+ </resources>
+ <connections/>
+</ui>
