@@ -291,7 +291,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Lily TNB Auto Tool"))
-        Project_list=["Ares1","Ares2_AMD","Ares2_Intel","Eagle","Hera","Hera2","Hotrod","kylo1","kylo2","L13_Intel","L13_AMD","L13_2_Intel","L13_2_AMD","L1415_Intel","L1415_AMD","L1415_2_Intel","L1415_2_AMD","LBB1","LBB2","LCE1","LCH1","LCH2","LCH3","LPM1","LPM2","LPM3","Leia","LTS1","LTS2","LRV2","LRV3","Lynx1","Lynx2","Zeus2","Zeus3"]
+        Project_list=["Ares1","Ares2_AMD","Ares2_Intel","Eagle","Hera","Hera2","Hotrod","kylo1","kylo2","L13_Intel","L13_AMD","L13_2_Intel","Fenrir_3_Intel","L13_2_AMD","L1415_Intel","L1415_AMD","L1415_2_Intel","L1416_Intel","L1415_2_AMD","L1416_AMD",LBB1","LBB2","LCE1","LCH1","LCH2","LCH3","LPM1","LPM2","LPM3","Leia","LTS1","LTS2","LRV2","LRV3","Lynx1","Lynx2","Zeus2","Zeus3"]
         self.comboBox.setMaxVisibleItems(7)
         self.comboBox.addItems(Project_list)
 
