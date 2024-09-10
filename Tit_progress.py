@@ -28,9 +28,14 @@ if int(version) >= 20000:
 else:
     system = 'Win10'
 biosver = bios.Win32_BIOS()[0].SMBIOSBIOSVersion[:-8]  # 去除bios版本后面的（1.09)
-inumber = CSProduct.get_identifying_number()
-inumber_1 = CSProduct.get_name()
-SNnumber = inumber_1 + inumber
+if int(version) < 26000:  #24H2这一段不适用
+    inumber = CSProduct.get_identifying_number()
+    inumber_1 = CSProduct.get_name()
+    SNnumber = inumber_1 + inumber
+else: #24H2
+    inumber = bios.Win32_BIOS()[0].SerialNumber
+    inumber_1 = bios.Win32_BaseBoard()[0].Product
+    SNnumber = inumber_1 + inumber
 winlr_server = 0
 ProjectConfirm_List_1_copyt = []
 sum_wangluozhongshu = 0
