@@ -1167,9 +1167,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                             time.sleep(1)
                     if os.path.exists('C:\\Windows\\Memory.DMP'):
                         QMessageBox.information(MainWindow, '提示', '有memorydump生成,若需要请自行在本地收集')
-                    if os.path.getsize('C:\\TNB_Integration_Tool\\LongRunATS_AOAC_v6\\LongRunATS_AOAC_Log.htm') == 0:
-                        os.system('C:\\TNB_Integration_Tool\\LongRunATS_AOAC_v6\\sleepstudy.bat')
-                        time.sleep(7)
                     os.system('start' + ' ' + '"' + '"' + ' ' + '"' + os.path.join('\\\\192.168.1.225', 'LR_Log', project_5) + '"')
                 else:
                     text_5, ok_5 = QInputDialog.getText(MainWindow, '提示', '请输入系统phase')
